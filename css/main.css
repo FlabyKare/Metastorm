@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,27 +55,11 @@ body {
   font-family: "Jost", sans-serif;
   background: #010101;
 }
-body img {
-  width: 100%;
-}
 
 .container {
   width: 100%;
   max-width: 1169px;
-}
-
-.blur_background {
-  position: relative;
-}
-.blur_background::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(358.91deg, #000000 0.98%, rgba(0, 0, 0, 0.71) 15.96%, rgba(0, 0, 0, 0.7) 24.32%, rgba(0, 0, 0, 0) 64.69%);
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  margin: auto;
 }
 
 header {
@@ -84,6 +69,7 @@ header {
   background-position: center;
   height: 100vh;
   max-height: 1080px;
+  position: relative;
 }
 
 .nav_wrapper {
@@ -93,4 +79,146 @@ header {
           backdrop-filter: blur(12px);
   padding: 21px 0;
   width: 100%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.followers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 23px;
+}
+.buttons .btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 9px 18px 10px 21px;
+}
+.buttons .btn1 {
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.buttons .btn1:hover {
+  border: 2px solid rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+}
+.links a {
+  text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+  line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.links a::after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 3px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background: rgba(255, 255, 255, 0.61);
+  border-radius: 16px; /*цвет фона элемента*/
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.links a:hover::after {
+  width: 100%;
+}
+.links a:hover {
+  color: goldenrod;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header_wrapper {
+  z-index: 11;
+}
+
+.product {
+  width: 100%;
+  border-radius: 7.15189px;
+  padding: 15px;
+  position: relative;
+  z-index: 12;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFA12A), to(#FEEF6D));
+  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
+  float: left;
+  margin: 0 auto;
+}
+.product img {
+  display: block;
+  position: relative;
+}
+.product .prodact_text {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #774200;
+}
+@-webkit-keyframes barberpole {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 150px;
+  }
+}
+@keyframes barberpole {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 150px;
+  }
+}
+.product:hover .product-hover, .product:active .product-hover {
+  -webkit-animation: barberpole 1.5s linear infinite;
+          animation: barberpole 1.5s linear infinite;
+}
+
+.product-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-size: 100px 100px;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.07) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0.07) 75%, transparent 75%, transparent);
 }
