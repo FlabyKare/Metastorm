@@ -1,4 +1,212 @@
 @charset "UTF-8";
+@media (max-width: 393.98px) {
+  .followers {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+  .buttons {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    width: 100%;
+  }
+  .buttons .btn {
+    width: 100%;
+  }
+  nav {
+    gap: 5px;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .followers .followers_item {
+    width: auto !important;
+    height: auto !important;
+  }
+  .logo {
+    width: 59px !important;
+    margin-right: 5%;
+    height: auto !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+  nav {
+    padding: 0 15px !important;
+  }
+  nav .logo {
+    width: 38px;
+    height: 42px;
+    min-width: 38px;
+    min-height: 42px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  nav .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  nav .followers {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    gap: 10px !important;
+  }
+  nav .followers .followers_item {
+    width: 28px;
+    height: 28px;
+  }
+  nav .followers .followers_item img {
+    width: 100%;
+    height: 100%;
+  }
+  nav .buttons {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    gap: 5px !important;
+  }
+  nav .buttons .btn {
+    font-size: 12px !important;
+    padding: 6px 3px 6px 6px !important;
+  }
+  .links_mobile {
+    margin-top: 13px;
+    padding: 14px 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .links_mobile a {
+    font-size: 25px !important;
+  }
+  .links_mobile a::after {
+    margin-top: 12px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  nav {
+    padding: 0 15px !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  nav .logo {
+    width: 38px;
+    height: 42px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  nav .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  nav .followers {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    gap: 0 !important;
+  }
+  nav .buttons {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+  nav .buttons .btn {
+    padding: 6px 3px 6px 6px !important;
+  }
+  .links_mobile {
+    margin-top: 13px;
+    padding: 14px 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .links_mobile a {
+    font-size: 25px !important;
+  }
+  .links_mobile a::after {
+    margin-top: 12px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav {
+    padding: 0 3% !important;
+  }
+  nav .logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  nav .followers {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  nav .buttons {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+  .links_mobile {
+    margin-top: 13px;
+    padding: 14px 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .links_mobile a {
+    font-size: 25px !important;
+  }
+  .links_mobile a::after {
+    margin-top: 12px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  nav {
+    padding: 0 3% !important;
+  }
+  .links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 40px;
+  }
+  .links_mobile {
+    display: none !important;
+  }
+  .links_mobile {
+    border: none !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 90px;
+  }
+  .links_mobile {
+    display: none !important;
+  }
+  .links_mobile {
+    border: none !important;
+  }
+}
+@media (min-width: 1400px) {
+  .links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 90px;
+  }
+  .links_mobile {
+    display: none !important;
+  }
+  .links_mobile {
+    border: none !important;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -112,6 +320,7 @@ nav {
   line-height: 26px;
   color: #FFFFFF;
   text-align: center;
+  cursor: pointer;
   padding: 9px 18px 10px 21px;
 }
 .buttons .btn1 {
@@ -119,20 +328,22 @@ nav {
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
 }
 .buttons .btn1:hover {
   border: 2px solid rgb(255, 255, 255);
   color: rgba(255, 255, 255, 0.9);
 }
-
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 150px;
+.buttons .btn2 {
+  background: #ca6852;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.links a {
+.buttons .btn2:hover {
+  background: #935243;
+}
+
+.links a, .links_mobile a {
   text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
   display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
   line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
@@ -142,7 +353,7 @@ nav {
   color: #FFFFFF;
   cursor: pointer;
 }
-.links a::after {
+.links a::after, .links_mobile a::after {
   display: block; /*превращаем его в блочный элемент*/
   content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
   height: 3px; /*задаём высоту линии*/
@@ -152,13 +363,24 @@ nav {
   -webkit-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
 }
-.links a:hover::after {
+.links a:hover::after, .links_mobile a:hover::after {
   width: 100%;
 }
-.links a:hover {
+.links a:hover, .links_mobile a:hover {
   color: goldenrod;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.links {
+  display: none;
+}
+
+.links_mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #4B4948;
 }
 
 .header_wrapper {
@@ -166,8 +388,12 @@ nav {
 }
 
 .product {
-  width: 100%;
+  width: 15%;
   border-radius: 7.15189px;
+  border: 1.78082px solid #FFF61B;
+  -webkit-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
+  box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
+  overflow-x: hidden;
   padding: 15px;
   position: relative;
   z-index: 12;
@@ -175,6 +401,8 @@ nav {
   background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
   float: left;
   margin: 0 auto;
+  -webkit-box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
+          box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
 }
 .product img {
   display: block;
@@ -190,23 +418,25 @@ nav {
 }
 @-webkit-keyframes barberpole {
   from {
-    background-position: 0;
+    background-position: 0 0;
   }
   to {
-    background-position: 150px;
+    background-position: 60px 30px;
   }
 }
 @keyframes barberpole {
   from {
-    background-position: 0;
+    background-position: 0 0;
   }
   to {
-    background-position: 150px;
+    background-position: 60px 30px;
   }
 }
-.product:hover .product-hover, .product:active .product-hover {
-  -webkit-animation: barberpole 1.5s linear infinite;
-          animation: barberpole 1.5s linear infinite;
+.product:hover .product-hover {
+  -webkit-animation: barberpole 2s linear infinite;
+          animation: barberpole 2s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .product-hover {
@@ -220,5 +450,5 @@ nav {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-size: 100px 100px;
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.07) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0.07) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.07) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0.07) 75%, transparent 75%);
 }

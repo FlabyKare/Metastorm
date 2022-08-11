@@ -1,0 +1,204 @@
+// header
+@media(max-width:393.98px){
+    .followers{
+        order: 0 !important;
+    }
+    .buttons{
+        order: 1!important;
+        width: 100%;
+        .btn{
+            width: 100%;
+        }
+
+    }
+    nav{
+        gap: 5px;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .followers{
+        .followers_item{
+            width: auto !important;
+            height: auto !important;
+        }
+    }
+    .logo{
+        width: 59px !important;
+        margin-right: 5%;
+        height: auto !important;
+    }
+
+}
+@media(min-width:320px) and (max-width:575.98px){
+    nav{
+        padding: 0 15px !important;
+        // justify-content: space-around !important;
+        .logo{
+            width: 38px;
+            height: 42px;
+            min-width: 38px;
+            min-height: 42px;
+            order: -1;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .followers{
+            order: 1 ;
+            gap: 10px !important;
+            .followers_item{
+                width: 28px;
+                height: 28px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .buttons{
+            order: 0 ;
+            gap: 5px !important;
+            .btn{
+                font-size: 12px !important;
+        padding: 6px 3px 6px 6px !important;
+
+            }
+            .btn1{
+        //         width: 82px !important;
+            // padding: 5px 2px 7px 4px !important;
+            }
+            .btn2{
+        //         width: 68px !important;
+
+        
+         }
+        }
+    }
+
+    .links_mobile{
+        margin-top: 13px;
+        padding: 14px 0 0;
+        justify-content: space-around;
+        a{
+            font-size: 25px !important;
+            &::after{
+                margin-top: 12px !important;
+            }
+        }
+    }
+}
+
+
+@media(min-width:576px) and (max-width:767.98px){
+        nav{
+        padding: 0 15px !important;
+        justify-content: space-around !important;
+        .logo{
+            width: 38px;
+            height: 42px;
+            order: -1;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .followers{
+            order: 1 !important;
+            gap: 0 !important;
+        }
+        .buttons{
+            order: 0 !important;
+            .btn{
+                padding: 6px 3px 6px 6px !important;
+            }
+        }
+    }
+
+    .links_mobile{
+        margin-top: 13px;
+        padding: 14px 0 0;
+        justify-content: space-around;
+        a{
+            font-size: 25px !important;
+            &::after{
+                margin-top: 12px !important;
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px) and (max-width:991.98px){
+    nav{
+        padding: 0 3% !important;
+        .logo{
+            order: -1;
+        }
+        .followers{
+            order: 1 !important;
+        }
+        .buttons{
+            order: 0 !important;
+        }
+    }
+    .links_mobile{
+        margin-top: 13px;
+        padding: 14px 0 0;
+        justify-content: space-around;
+        a{
+            font-size: 25px !important;
+            &::after{
+                margin-top: 12px !important;
+            }
+        }
+    }
+}
+
+
+@media(min-width:992px) and (max-width:1199.98px){
+    nav{
+        padding: 0 3% !important;
+    }
+    .links{
+        display: flex !important;
+        gap: 40px;
+    }
+    .links_mobile{
+        display: none !important;
+    }
+    .links_mobile{
+        border: none !important;
+}
+}
+
+
+@media(min-width:1200px) and (max-width:1399.98px){
+    .links{
+        display: flex !important;
+        gap: 90px;
+    }
+    .links_mobile{
+        display: none !important;
+    }
+    .links_mobile{
+        border: none !important;
+}
+}
+
+
+@media(min-width:1400px){
+    .links{
+        display: flex !important;
+        gap: 90px;
+    }
+    .links_mobile{
+        display: none !important;
+    }
+    .links_mobile{
+        border: none !important;
+}
+}
+
+
+

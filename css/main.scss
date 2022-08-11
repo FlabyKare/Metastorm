@@ -1,3 +1,5 @@
+@import '_media';
+
 // Обнуление стилей
 
 html, body, div, span, applet, object, iframe,
@@ -64,7 +66,7 @@ body{
 //         position: absolute;
 //         top: 0;
 //         left: 0;
-//         background: linear-gradient(358.91deg, #000000 0.98%, rgba(0, 0, 0, 0.71) 15.96%, rgba(0, 0, 0, 0.7) 24.32%, rgba(0, 0, 0, 0) 64.69%);
+//         background: linear-gradient(358.91deg, #000000 0.98%, rgba(0, 0, 0, 0.71) 15.96%, rgba(0, 0, 0, 0.7) 24.32%, rgba(0, 0, 0, 0) 100%);
 //         width: 100%;
 //         height: 100%;
 //     }
@@ -83,7 +85,6 @@ header{
     backdrop-filter: blur(12px);
     padding: 21px 0;
     width: 100%;
-
 }
 
 nav{
@@ -105,6 +106,7 @@ nav{
         line-height: 26px;
         color: #FFFFFF;
         text-align: center;
+        cursor: pointer;
         padding: 9px 18px 10px 21px;
 
     }
@@ -112,18 +114,22 @@ nav{
         border: 2px solid rgba(255, 255, 255, 0.45);
         border-radius: 5px;
         transition: .5s;
-        cursor: pointer;
         &:hover{
             border: 2px solid rgba(255, 255, 255, 1);
             color: rgba(255, 255, 255, 0.90);
         }
     }
+    .btn2{
+        background: #ca6852;
+        border-radius: 5px;
+        transition: .5s;
+        &:hover{
+            background: #935243;
+        }
+    }
 }
 // links
-
-.links{
-    display: flex;
-    gap: 150px;
+.links, .links_mobile{
     a {
         text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
         display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
@@ -152,7 +158,13 @@ nav{
                 transition: .5s;
             } 
         }
-
+}
+.links{
+    display: none;
+}
+.links_mobile{
+    display: flex;
+    border-top: 1px solid #4B4948;
 }
 .header_wrapper{
     z-index: 11;
@@ -160,14 +172,21 @@ nav{
 // button
 
 .product {
-  width: 100%;
+  width: 15%;
   border-radius: 7.15189px;
+  border: 1.78082px solid #FFF61B;
+  -webkit-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
+-moz-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
+box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
+  overflow-x: hidden;
   padding: 15px;
   position: relative;
   z-index: 12;
   background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
   float: left;
   margin: 0 auto;
+  box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
+
     img {
     display: block;
     position: relative;
@@ -180,17 +199,20 @@ nav{
       color: #774200;
 
   }
-
-  &:hover, &:active {
+&:hover{
     @keyframes barberpole {
-        from { background-position: 0; }
-        to   { background-position: 150px; }
+        from { background-position: 0 0; }
+        to   { background-position: 60px 30px; }
       }
-      .product-hover{
-        animation: barberpole 1.5s linear infinite;
-      }
-  }
+    .product-hover{
+        animation: barberpole 2s linear infinite;
+        animation-direction: alternate;
+    }
 }
+
+}
+
+
 .product-hover {
   position: absolute;
   top: 0;
@@ -206,8 +228,8 @@ nav{
     rgba(black, 0.07)  25%, 
     transparent 25%, transparent 50%, 
     rgba(black, 0.07) 50%, rgba(black, 0.07) 75%, 
-    transparent 75%, transparent
-  );  
+    transparent 75%);  
+
 
 }
 
