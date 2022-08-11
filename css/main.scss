@@ -79,6 +79,7 @@ header{
     height: 100vh;
     max-height: 1080px;
     position: relative;
+    box-shadow: 0px -130px 100px 250px rgb(0 0 0 / 63%) inset;
 }
 .nav_wrapper{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
@@ -92,10 +93,30 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+.followers_item{
+    padding: 14px 12px 10px;
+    background: #111110;
+    border-radius: 5px;
+    transition: .25s;
+    cursor: pointer;
 
+    .hover_block{
+        display: none;
+    }
+    &:hover{
+        background: #fff;
+        .hover_hidden{
+            display: none;
+        }
+        .hover_block{
+            display: block;
+        }
+    }
+}
 .followers{
     display: flex;
     gap: 25px;
+
 }
 .buttons{
     display: flex;
@@ -169,24 +190,76 @@ nav{
 .header_wrapper{
     z-index: 11;
 }
+
+.header_info_wrapper{
+    text-align: left;
+    margin-top: 232px;
+    ul{
+        font-weight: 600;
+        font-size: 27.8383px;
+        line-height: 196.5%;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.68);
+        margin: 48px 0;
+    }
+
+    
+}
+.personal_icon{
+    li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        &::before{
+            content:'';
+            width: 34px;
+            height: 34px;
+            display: inline-block;
+            background: url(../img/Header/icon_crosshair.svg);
+        }
+    }
+}
+.header_info_btns{
+    display: flex;
+    gap: 45px;
+    justify-content: start;
+    .btn1{
+        padding-right: 60px;
+        padding-left: 60px;
+        font-weight: 700;
+        font-size: 22.2603px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #C4C4C4;
+    }
+    .product{
+        width: 265px;
+        padding: 9px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        color: #774200;
+    
+    }
+}
+
+
+
 // button
 
 .product {
-  width: 15%;
+
   border-radius: 7.15189px;
   border: 1.78082px solid #FFF61B;
   -webkit-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
 -moz-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
 box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
   overflow-x: hidden;
-  padding: 15px;
   position: relative;
-  z-index: 12;
   background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
   float: left;
-  margin: 0 auto;
   box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
-
     img {
     display: block;
     position: relative;
@@ -211,8 +284,6 @@ box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
 }
 
 }
-
-
 .product-hover {
   position: absolute;
   top: 0;
