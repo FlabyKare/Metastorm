@@ -670,7 +670,7 @@ nav {
     background-position: 0 0;
   }
   to {
-    background-position: 60px 30px;
+    background-position: 10000px 30px;
   }
 }
 @keyframes barberpole {
@@ -678,12 +678,12 @@ nav {
     background-position: 0 0;
   }
   to {
-    background-position: 60px 30px;
+    background-position: 10000px 30px;
   }
 }
 .product:hover .product-hover {
-  -webkit-animation: barberpole 2s linear infinite;
-          animation: barberpole 2s linear infinite;
+  -webkit-animation: barberpole 180s linear infinite;
+          animation: barberpole 180s linear infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }

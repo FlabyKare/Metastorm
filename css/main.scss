@@ -275,10 +275,10 @@ box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
 &:hover{
     @keyframes barberpole {
         from { background-position: 0 0; }
-        to   { background-position: 60px 30px; }
+        to   { background-position: 10000px 30px; }
       }
     .product-hover{
-        animation: barberpole 2s linear infinite;
+        animation: barberpole 180s linear infinite;
         animation-direction: alternate;
     }
 }
