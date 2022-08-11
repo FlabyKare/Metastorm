@@ -48,6 +48,11 @@
             box-shadow: none !important;
   }
 }
+@media (max-height: 799.98px) {
+  header {
+    height: 400vh !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
   nav {
     padding: 0 15px !important;
@@ -447,7 +452,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
   max-height: 1080px;
   position: relative;
   -webkit-box-shadow: 0px -130px 100px 250px rgba(0, 0, 0, 0.63) inset;
