@@ -1,62 +1,143 @@
-@import '_media';
+@import "_media";
 
 // Обнуление стилей
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+   list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+   border-collapse: collapse;
+   border-spacing: 0;
 }
 
-*{
-    box-sizing: border-box;
+* {
+   box-sizing: border-box;
 }
 
-body{
-    line-height: 1;
-    font-family: 'Jost', sans-serif;
-    background: #010101;
+body {
+   line-height: 1;
+   font-family: "Jost", sans-serif;
+   background: #010101;
 }
 
-.container{
-    width: 100%;
-    max-width: 1169px;
-    margin: auto;
+.container {
+   width: 100%;
+   max-width: 1169px;
+   margin: auto;
 }
 // .blur_background{
 //     position: relative;
@@ -71,237 +152,279 @@ body{
 //         height: 100%;
 //     }
 // }
-header{
-    background-image: url(../img/Header/intro_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 110vh;
-    max-height: 1080px;
-    position: relative;
-    box-shadow: 0px -130px 100px 250px rgb(0 0 0 / 63%) inset;
+header {
+   background-image: url(../img/Header/intro_bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 110vh;
+   max-height: 1080px;
+   position: relative;
+   box-shadow: 0px -130px 100px 250px rgb(0 0 0 / 91%) inset;
 }
-.nav_wrapper{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
-    backdrop-filter: blur(12px);
-    padding: 21px 0;
-    width: 100%;
+.nav_wrapper {
+   background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.47) 25.63%,
+      rgba(0, 0, 0, 0) 117.23%
+   );
+   -webkit-backdrop-filter: blur(12px);
+   backdrop-filter: blur(12px);
+   padding: 21px 0;
+   width: 100%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
-.followers_item{
-    padding: 14px 12px 10px;
-    background: #111110;
-    border-radius: 5px;
-    transition: .25s;
-    cursor: pointer;
 
-    .hover_block{
-        display: none;
-    }
-    &:hover{
-        background: #fff;
-        .hover_hidden{
-            display: none;
-        }
-        .hover_block{
-            display: block;
-        }
-    }
+.followers_item {
+   padding: 14px 12px 10px;
+   background: #111110;
+   border-radius: 5px;
+   transition: 0.25s;
+   cursor: pointer;
+
+   .hover_block {
+      display: none;
+   }
+   &:hover {
+      background: #fff;
+      .hover_hidden {
+         display: none;
+      }
+      .hover_block {
+         display: block;
+      }
+   }
 }
-.followers{
-    display: flex;
-    gap: 25px;
-
+.followers {
+   display: flex;
+   gap: 25px;
 }
-.buttons{
-    display: flex;
-    gap: 23px;
-    .btn{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
-        text-align: center;
-        cursor: pointer;
-        padding: 9px 18px 10px 21px;
-
-    }
-    .btn1{
-        border: 2px solid rgba(255, 255, 255, 0.45);
-        border-radius: 5px;
-        transition: .5s;
-        &:hover{
-            border: 2px solid rgba(255, 255, 255, 1);
-            color: rgba(255, 255, 255, 0.90);
-        }
-    }
-    .btn2{
-        background: #ca6852;
-        border-radius: 5px;
-        transition: .5s;
-        &:hover{
-            background: #935243;
-        }
-    }
+.buttons {
+   display: flex;
+   gap: 23px;
+   .btn {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      text-align: center;
+      cursor: pointer;
+      padding: 9px 18px 10px 21px;
+   }
+   .btn1 {
+      border: 2px solid rgba(255, 255, 255, 0.45);
+      border-radius: 5px;
+      transition: 0.5s;
+      &:hover {
+         border: 2px solid rgba(255, 255, 255, 1);
+         color: rgba(255, 255, 255, 0.9);
+      }
+   }
+   .btn2 {
+      background: #ca6852;
+      border-radius: 5px;
+      transition: 0.5s;
+      &:hover {
+         background: #935243;
+      }
+   }
 }
 // links
-.links, .links_mobile{
-    a {
-        text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
-        display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
-        line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
-        cursor: pointer;
-        &::after {
-            display: block; /*превращаем его в блочный элемент*/
-            content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-            height: 3px; /*задаём высоту линии*/
-            width: 0%; /*задаём начальную ширину элемента (линии)*/
-            background: rgba(255, 255, 255, 0.61);
-            border-radius: 16px; /*цвет фона элемента*/
-            transition: width 0.2s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
-            }
-            &:hover{
-                &::after{
-                    width: 100%;
-                }
-            }
-            &:hover{
-                color: goldenrod;
-                transition: .5s;
-            } 
-        }
+.links,
+.links_mobile {
+   a {
+      text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+      display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+      line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffffff;
+      cursor: pointer;
+      &::after {
+         display: block; /*превращаем его в блочный элемент*/
+         content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+         height: 3px; /*задаём высоту линии*/
+         width: 0%; /*задаём начальную ширину элемента (линии)*/
+         background: rgba(255, 255, 255, 0.61);
+         border-radius: 16px; /*цвет фона элемента*/
+         transition: width 0.2s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+      }
+      &:hover {
+         &::after {
+            width: 100%;
+         }
+      }
+      &:hover {
+         color: goldenrod;
+         transition: 0.5s;
+      }
+   }
 }
-.links{
-    display: none;
+.links {
+   display: none;
 }
-.links_mobile{
+.links_mobile {
+   display: flex;
+   border-top: 1px solid #4b4948;
+}
+.header_wrapper {
+   z-index: 11;
+}
+
+.header_info_wrapper {
+   text-align: left;
+   margin-top: 232px;
+   ul {
+      font-weight: 600;
+      font-size: 27.8383px;
+      line-height: 196.5%;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.68);
+      margin: 48px 0;
+   }
+}
+.d_flex{
     display: flex;
-    border-top: 1px solid #4B4948;
 }
-.header_wrapper{
-    z-index: 11;
+.personal_icon {
+   li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      &::before {
+         content: "";
+         width: 34px;
+         height: 34px;
+         display: inline-block;
+         background: url(../img/Header/icon_crosshair.svg);
+      }
+   }
 }
-
-.header_info_wrapper{
-    text-align: left;
-    margin-top: 232px;
-    ul{
-        font-weight: 600;
-        font-size: 27.8383px;
-        line-height: 196.5%;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.68);
-        margin: 48px 0;
-    }
-
-    
+.header_info_btns {
+   display: flex;
+   gap: 45px;
+   justify-content: start;
+   .btn1 {
+      padding-right: 60px;
+      padding-left: 60px;
+      font-weight: 700;
+      font-size: 22.2603px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #c4c4c4;
+   }
+   .product {
+      width: 265px;
+      padding: 9px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+      color: #774200;
+   }
 }
-.personal_icon{
-    li{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 19px;
-        &::before{
-            content:'';
-            width: 34px;
-            height: 34px;
-            display: inline-block;
-            background: url(../img/Header/icon_crosshair.svg);
-        }
-    }
-}
-.header_info_btns{
-    display: flex;
-    gap: 45px;
-    justify-content: start;
-    .btn1{
-        padding-right: 60px;
-        padding-left: 60px;
-        font-weight: 700;
-        font-size: 22.2603px;
-        line-height: 32px;
-        text-transform: uppercase;
-        color: #C4C4C4;
-    }
-    .product{
-        width: 265px;
-        padding: 9px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 32px;
-        color: #774200;
-    
-    }
-}
-
-
 
 // button
 
 .product {
-
-  border-radius: 7.15189px;
-  border: 1.78082px solid #FFF61B;
-  -webkit-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
--moz-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27,0.7);
-box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
-  overflow-x: hidden;
-  position: relative;
-  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
-  float: left;
-  box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
-    img {
-    display: block;
-    position: relative;
-  }
-  .prodact_text{
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-        transition: .5s;
+   border-radius: 7.15189px;
+   border: 1.78082px solid #fff61b;
+   box-shadow: 0px 3px 100px -28px rgba(255, 246, 27, 0.7);
+   overflow-x: hidden;
+   position: relative;
+   background: linear-gradient(180deg, #ffa12a 0%, #feef6d 100%);
+   float: left;
+   box-shadow: -6px -4px 46px 12px rgba(255, 161, 42, 0.6);
+   img {
+      display: block;
+      position: relative;
+   }
+   .prodact_text {
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      transition: 0.5s;
       color: #774200;
-
-  }
-&:hover{
-    @keyframes barberpole {
-        from { background-position: 0 0; }
-        to   { background-position: 10000px 30px; }
+   }
+   &:hover {
+      @-webkit-keyframes barberpole {
+         from {
+            background-position: 0 0;
+         }
+         to {
+            background-position: 10000px 30px;
+         }
       }
-    .product-hover{
-        animation: barberpole 180s linear infinite;
-        animation-direction: alternate;
-    }
-}
-
+      @keyframes barberpole {
+         from {
+            background-position: 0 0;
+         }
+         to {
+            background-position: 10000px 30px;
+         }
+      }
+      .product-hover {
+         -webkit-animation: barberpole 180s linear infinite;
+         animation: barberpole 180s linear infinite;
+         -webkit-animation-direction: alternate;
+         animation-direction: alternate;
+      }
+   }
 }
 .product-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  cursor: pointer;
-  bottom: 0;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  background-size: 100px 100px;
-  background-image: linear-gradient(
-    -45deg, 
-    rgba(black, 0.07)  25%, 
-    transparent 25%, transparent 50%, 
-    rgba(black, 0.07) 50%, rgba(black, 0.07) 75%, 
-    transparent 75%);  
-
-
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   cursor: pointer;
+   bottom: 0;
+   opacity: 1;
+   transition: opacity 0.3s ease;
+   background-size: 100px 100px;
+   background-image: linear-gradient(
+      -45deg,
+      rgba(black, 0.07) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(black, 0.07) 50%,
+      rgba(black, 0.07) 75%,
+      transparent 75%
+   );
 }
 
+// Second section
 
+.first_video {
+    background: linear-gradient(180.41deg, #000000 4.14%, rgba(0, 0, 0, 0.26) 19.52%, rgba(0, 0, 0, 0) 49.74%, rgba(0, 0, 0, 0) 76.71%, rgba(0, 0, 0, 0) 94.41%), linear-gradient(90.11deg, rgba(0, 0, 0, 0.9) 1.75%, rgba(0, 0, 0, 0.234) 18.47%, rgba(0, 0, 0, 0) 51.34%, rgba(0, 0, 0, 0.234) 80.65%, rgba(0, 0, 0, 0.9) 99.9%), url(../img/Second_section/background.png);
+}
+.first_video_wrapper {
+}
+
+.first_video_title_icons {
+    align-items: center;
+    justify-content: space-around;
+}
+.first_video_title_icon_item {
+    text-align: center;
+
+    .first_video_title_icon_item_title{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 196.5%;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), rgba(255, 255, 255, 0.68);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+.first_video_img {
+    margin-top: 40px;
+}
