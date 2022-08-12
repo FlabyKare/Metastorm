@@ -48,11 +48,6 @@
             box-shadow: none !important;
   }
 }
-@media (max-height: 799.98px) {
-  header {
-    height: 400vh !important;
-  }
-}
 @media (min-width: 320px) and (max-width: 575.98px) {
   nav {
     padding: 0 15px !important;
@@ -349,6 +344,9 @@
             align-items: center;
     gap: 19px;
   }
+  header {
+    margin-bottom: 10% !important;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .links {
@@ -363,6 +361,9 @@
   .links_mobile {
     border: none !important;
   }
+  header {
+    margin-bottom: 10% !important;
+  }
 }
 @media (min-width: 1400px) {
   .links {
@@ -376,6 +377,9 @@
   }
   .links_mobile {
     border: none !important;
+  }
+  header {
+    margin-bottom: 10% !important;
   }
 }
 @media (max-width: 889.98px) {
@@ -571,7 +575,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  max-height: 1080px;
+  min-height: 800px;
   position: relative;
   -webkit-box-shadow: 0px -130px 100px 250px rgba(0, 0, 0, 0.91) inset;
           box-shadow: 0px -130px 100px 250px rgba(0, 0, 0, 0.91) inset;
