@@ -425,6 +425,38 @@
     padding: 0 5%;
   }
 }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .third_section_wrapper {
+    padding: 0 5%;
+  }
+  .third_section_wrapper p {
+    font-size: 16px !important;
+  }
+  .third_section_wrapper .third_section_subtitle img {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .third_section_wrapper {
+    padding: 0 5%;
+  }
+  .third_section_wrapper p {
+    font-size: 16px !important;
+  }
+  .third_section_wrapper .third_section_subtitle img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .what_img {
+    display: none !important;
+  }
+}
+@media (min-width: 1400px) {
+  .what_img {
+    display: none !important;
+  }
+}
 html,
 body,
 div,
@@ -577,8 +609,8 @@ header {
   height: 100vh;
   min-height: 800px;
   position: relative;
-  -webkit-box-shadow: 0px -130px 100px 250px rgba(0, 0, 0, 0.91) inset;
-          box-shadow: 0px -130px 100px 250px rgba(0, 0, 0, 0.91) inset;
+  -webkit-box-shadow: 0px -175px 100px 21px rgba(0, 0, 0, 0.91) inset;
+          box-shadow: 0px -175px 100px 21px rgba(0, 0, 0, 0.91) inset;
 }
 
 .nav_wrapper {
@@ -841,6 +873,9 @@ nav {
 
 .first_video {
   background: url(../img/Second_section/background.jpg);
+  padding-bottom: 5%;
+  -webkit-box-shadow: 0px 50px 100px 100px rgb(0, 0, 0) inset;
+          box-shadow: 0px 50px 100px 100px rgb(0, 0, 0) inset;
 }
 
 .first_video_title_icons {
@@ -871,4 +906,54 @@ nav {
 
 .first_video_img {
   margin-top: 40px;
+}
+
+.third_section {
+  background: url(../img/Third_section/third_bg.png);
+  background-size: cover;
+  padding: 140px 0;
+}
+
+.third_section_wrapper {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+.third_section_title {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 62px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2D8DE), color-stop(23.96%, #FEFFFF), color-stop(50.52%, #C0C3C6), color-stop(79.69%, #B6BBBF), color-stop(98.44%, #ACB2B7));
+  background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.third_section_text {
+  margin-top: 30px;
+}
+.third_section_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.what_img {
+  display: block;
+}
+
+.slider_box_item {
+  max-width: 370px;
+}
+.slider_box_item img {
+  width: 100%;
+}
+
+.slider_box_wrapper.container {
+  max-width: 1750px;
 }
