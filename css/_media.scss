@@ -313,7 +313,16 @@
 // Second_section
 
 
-
+@media(max-width:889.98px){
+    .first_video_title_icons{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 100px;
+        .first_video_title_icon_item{
+            min-width: 200px;
+        }
+    }
+}
 @media(min-width:320px) and (max-width:575.98px){
     .first_video_wrapper{
         padding: 0 5%;
