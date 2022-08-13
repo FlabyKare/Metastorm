@@ -457,6 +457,43 @@
     display: none !important;
   }
 }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .slider_box_wrapper.container {
+    max-width: 90% !important;
+  }
+  .slider_box, .section_subtitle {
+    padding: 5%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slider_box_wrapper.container {
+    max-width: 90% !important;
+  }
+  .slider_box, .section_subtitle {
+    padding: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slider_box_wrapper.container {
+    max-width: 90% !important;
+  }
+  .slider_box, .section_subtitle {
+    padding: 5%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .slider_box_wrapper.container {
+    max-width: 900px !important;
+  }
+  .slider_box, .section_subtitle {
+    padding: 5%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .slider_box_wrapper.container {
+    max-width: 1100px !important;
+  }
+}
 html,
 body,
 div,
@@ -592,7 +629,8 @@ table {
 body {
   line-height: 1;
   font-family: "Jost", sans-serif;
-  background: #010101;
+  background: #000;
+  padding-bottom: 300px;
 }
 
 .container {
@@ -947,13 +985,136 @@ nav {
   display: block;
 }
 
+.slider_box {
+  background: url(../img/Fourth_Part/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 160px;
+}
+
 .slider_box_item {
-  max-width: 370px;
+  width: 33%;
 }
 .slider_box_item img {
   width: 100%;
 }
 
 .slider_box_wrapper.container {
-  max-width: 1750px;
+  max-width: 1245px;
+}
+
+.section_title {
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2D8DE), color-stop(23.96%, #FEFFFF), color-stop(50.52%, #C0C3C6), color-stop(79.69%, #B6BBBF), color-stop(98.44%, #ACB2B7));
+  background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.section_subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 27px auto 51px;
+}
+
+.slick-dots li {
+  border-radius: 50%;
+  background: #C4C4C4;
+}
+.slick-dots .slick-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFA12A), to(#FEEF6D)), #FEFE40 !important;
+  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), #FEFE40 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  /* position: absolute; */
+  /* top: 1px; */
+  /* left: 0; */
+  margin: 1% auto;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+  content: "";
+}
+
+.slick-next:before {
+  content: "";
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white;
+  opacity: 1;
+}
+
+.slick-prev {
+  background: url(../img/Fourth_Part/left_arrow.svg);
+  left: -33px;
+}
+.slick-prev:hover {
+  background: url(../img/Fourth_Part/left_arrow.svg);
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-prev:focus {
+  background: url(../img/Fourth_Part/left_arrow.svg);
+  right: -33px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next {
+  background: url(../img/Fourth_Part/rigth_arrow_white.svg);
+  right: -33px;
+}
+.slick-next:hover {
+  background: url(../img/Fourth_Part/rigth_arrow_white.svg);
+  opacity: 0.5;
+  right: -33px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-next:focus {
+  background: url(../img/Fourth_Part/rigth_arrow_white.svg);
+  right: -33px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev, .slick-next {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  width: 27px;
+  height: 47px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
