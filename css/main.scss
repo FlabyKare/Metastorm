@@ -700,8 +700,6 @@ margin: 27px auto 51px;
     }
 }
 }
-
-
 .last_gun_padding{
     padding: 65px 230px !important;
     img{
@@ -748,4 +746,193 @@ margin: 27px auto 51px;
 
 .mobile_slider_wrapper,.guns_slider{
     padding: 75px 0 195px;
+}
+.section_title{
+    text-transform: uppercase;
+}
+.fifth_section{
+    background: url(../img/Fifth_Part/background.png);
+    padding: 0 5% 150px;
+
+}
+
+.sixth_section{
+    background: url(../img/Sixth_Part/dark_bg.png);
+    padding: 100px 5% 150px;
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    .p_margin-top{
+        margin-top: 25px;
+    }
+    ul{
+        border-top: none !important;
+        border: 3px solid #515050;
+        border-radius: 0px 0px 25px 25px;
+        padding: 22px 0 10px 73px;
+        width: 100%;
+    }
+    li{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 196.5%;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.68);
+        gap: 25px;
+        margin-bottom: 13px;
+    }
+    h3{
+        display: flex;
+        font-weight: 700;
+        font-size: 22.2603px;
+        line-height: 32px;
+        color: #FFFFFF;
+        justify-content: center;
+        background: linear-gradient(180deg, #5B2B30 -90.77%, #6B3935 12.11%, #A25B48 97.02%);
+        border-radius: 5.49533px 5.49533px 0px 0px;
+        padding: 17px 0;
+        text-shadow: 0px 1.83178px 0px rgba(152, 97, 86, 0.35);
+        &::before{
+            content: '';
+            width: 29px;
+            height: 30px;
+            background: url(../img/Sixth_Part/Btn_before.svg);
+            margin-right: 13px;
+        }
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        gap: 63px;
+        align-items: center;
+        .header_info_btns{
+            margin-top: 51px;
+        }
+        li{
+            &::before{
+                width: 26px;
+                height: 26px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .main_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_item1{
+        width: 57%;
+    }
+    .main_item2{
+        width: 43%;
+        gap: 40px;
+    }
+}
+.desk_none{
+    display: none;
+}
+
+
+
+
+
+.seventh_section {
+    background: url(../img/Seventh_Part/bg.png);
+    padding: 200px 0 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventh_section_wrapper {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+
+}
+.container {
+}
+.seventh_section_item {
+    width: 50%;
+}
+.seventh_section_item1 {
+    width: 100%;
+    max-width: 458px;
+    text-align: left;
+}
+.seventh_section_item_title{
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 62px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+}
+.seventh_section_item_card {
+    background: rgba(196, 196, 196, 0.1);
+border: 2px solid #515050;
+border-radius: 20px;
+padding: 25px 0 25px 45px;
+display: flex;
+gap: 25px;
+margin: 28px auto 46px;
+}
+.seventh_section_item_card_logo {
+}
+.seventh_section_item_card_info {
+}
+.seventh_section_item_card_info_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.seventh_section_item_card_info_price {
+    font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: #FFFFFF;
+}
+.seventh_section_item_list {
+    ul{
+        margin-top: -24px;
+    }
+    li{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+        list-style: none;
+
+    }
+    .li_flex{
+        display: flex;
+        margin-top: 24px;
+        gap: 19px;
+        align-items: center;
+    }
+    img{
+        width: 36px;
+        height: 36px;
+    }
+}
+.seventh_section_item2 {
+}
+
+
+.team{
+    background: url(../img/8_Part/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
