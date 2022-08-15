@@ -1109,6 +1109,7 @@
     .partners {
         background-size: cover !important;
         background-repeat: no-repeat !important;
+        background-position: center !important;
     }
     .footer_info, .contactus {
         font-size: 12px !important;
@@ -1128,24 +1129,48 @@
         margin-top: 39px;
     }
     .partners {
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
     }
 }
 
 
-@media(min-width:768px) and (max-width:991.98px){}
+@media(min-width:768px) and (max-width:991.98px){
+    .partners {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+}
 
 
-@media(min-width:992px) and (max-width:1199.98px){}
+@media(min-width:992px) and (max-width:1199.98px){
+        .partners {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+}
 
 
 @media(min-width:1200px) and (max-width:1399.98px){
     
+        .partners {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
 }
 
 
-@media(min-width:1400px){}
+@media(min-width:1400px){
+        .partners {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+}
 
 
 
