@@ -41,6 +41,13 @@ $(".slider_gun_wrapper").slick({
     arrows: false,
     dots: true,
  });
+ $(".desktop_slider_none").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+ });
 
 var swiper = new Swiper(".mySwiper", {
    loop: false,
