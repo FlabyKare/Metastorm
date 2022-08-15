@@ -1093,16 +1093,43 @@
 
 
 
-// Second_section
+// footer
 
 
 
-@media(min-width:320px) and (max-width:575.98px){}
+@media(min-width:320px) and (max-width:575.98px){
+    .footer{
+        flex-direction: column !important;
+        padding: 0 16px !important;
+    }
+    .footer_info{
+        order: 2;
+        margin-top: 39px;
+    }
+    .partners {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    .footer_info, .contactus {
+        font-size: 12px !important;
+    }
+}
 
 
 @media(min-width:576px) and (max-width:767.98px){
     .mobile_slider_none{
         display: none !important;
+    }
+    .footer{
+        flex-direction: column !important;
+    }
+    .footer_info{
+        order: 2;
+        margin-top: 39px;
+    }
+    .partners {
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -1113,7 +1140,9 @@
 @media(min-width:992px) and (max-width:1199.98px){}
 
 
-@media(min-width:1200px) and (max-width:1399.98px){}
+@media(min-width:1200px) and (max-width:1399.98px){
+    
+}
 
 
 @media(min-width:1400px){}

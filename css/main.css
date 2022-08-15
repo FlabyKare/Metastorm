@@ -1048,9 +1048,47 @@
             order: -1;
   }
 }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 0 16px !important;
+  }
+  .footer_info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 39px;
+  }
+  .partners {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  .footer_info, .contactus {
+    font-size: 12px !important;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .mobile_slider_none {
     display: none !important;
+  }
+  .footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer_info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 39px;
+  }
+  .partners {
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 html,
@@ -1189,7 +1227,7 @@ body {
   line-height: 1;
   font-family: "Jost", sans-serif;
   background: #000;
-  padding-bottom: 300px;
+  padding-bottom: 55px;
 }
 
 .container {
@@ -2119,10 +2157,6 @@ nav {
   border-radius: 12px;
   margin-top: 73px !important;
 }
-.desktop_slider_none .block_item {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
 .desktop_slider_none ul {
   bottom: -50px !important;
 }
@@ -2152,4 +2186,31 @@ nav {
   background: rgba(196, 196, 196, 0.42);
   border: 2px solid rgba(255, 255, 255, 0.58);
   border-radius: 12px;
+}
+
+.footer_info, .contactus {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .followers {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px !important;
 }

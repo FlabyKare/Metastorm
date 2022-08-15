@@ -132,7 +132,7 @@ body {
    line-height: 1;
    font-family: "Jost", sans-serif;
    background: #000;
-   padding-bottom: 300px;
+   padding-bottom: 55px;
 }
 
 .container {
@@ -987,9 +987,6 @@ color: #FFFFFF;
     border: 2px solid rgba(255, 255, 255, 0.58);
     border-radius: 12px;
     margin-top: 73px !important;
-    .block_item{
-        transition: 0.5s;
-    }
     ul{
         bottom: -50px !important;
     }
@@ -1014,5 +1011,22 @@ color: #FFFFFF;
         border: 2px solid rgba(255, 255, 255, 0.58);
         border-radius: 12px;
         
+    }
+}
+.footer_info,.contactus{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    .followers{
+        align-items: center;
+        gap: 15px !important;
     }
 }
