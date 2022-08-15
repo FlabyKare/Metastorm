@@ -710,6 +710,8 @@
     }
     .sixth_section{
         background: url(../img/Sixth_Part/mobile.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
         .desk_none{
             display: flex !important;
             margin-top: 0 !important;

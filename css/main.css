@@ -697,6 +697,8 @@
   }
   .sixth_section {
     background: url(../img/Sixth_Part/mobile.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
   }
   .sixth_section .desk_none {
     display: -webkit-box !important;
