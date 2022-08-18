@@ -1440,6 +1440,9 @@
     height: 588px;
     max-width: 450px !important;
   }
+  .planshet_visible {
+    display: none !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .services_items {
@@ -1463,6 +1466,9 @@
     top: -118px;
     height: 588px;
     max-width: 450px !important;
+  }
+  .desktop_team_wrapper {
+    display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1508,6 +1514,21 @@
 @media (max-width: 1199.98px) {
   .services_items {
     gap: 80px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .planshet_visible {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .desktop_team_wrapper {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .planshet_visible {
+    display: none !important;
   }
 }
 html,
