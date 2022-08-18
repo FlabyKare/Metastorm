@@ -1415,9 +1415,6 @@
   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
-  .private_sale_body {
-    background: rgba(0, 0, 0, 0.95) !important;
-  }
   .services_items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2795,7 +2792,7 @@ nav {
   padding: 0 15px;
 }
 
-.private_sale_body {
+.body_background_container {
   background: url(../img/Page_Private_Sale/background.png);
   background-repeat: no-repeat !important;
   background-size: cover !important;
