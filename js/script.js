@@ -1,3 +1,6 @@
+
+
+
 $(".slider_box_wrapper").slick({
    infinite: true,
    slidesToShow: 3,
@@ -68,3 +71,5 @@ var swiper2 = new Swiper(".mySwiper2", {
       swiper: swiper,
    },
 });
+
+

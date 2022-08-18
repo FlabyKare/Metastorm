@@ -1095,9 +1095,19 @@
 
 // footer
 
-
+@media(min-width: 768px){
+    .blocks_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
 
 @media(min-width:320px) and (max-width:575.98px){
+    .mobile_slider_none{
+        display: none !important;
+    }
     .footer{
         flex-direction: column !important;
         padding: 0 16px !important;
@@ -1114,6 +1124,21 @@
     .footer_info, .contactus {
         font-size: 12px !important;
     }
+    .desktop_slider_none{
+            width: 100%;
+    max-width: 270px;
+    height: 100px;
+    /* background: rgba(196, 196, 196, 0.42); */
+    /* border: 2px solid rgba(255, 255, 255, 0.58); */
+    /* border-radius: 12px; */
+    margin-top: 73px !important;
+        img{
+            width: 100% !important;
+        }
+
+    }
+
+    
 }
 
 
@@ -1133,6 +1158,19 @@
         background-repeat: no-repeat !important;
         background-position: center !important;
     }
+    .desktop_slider_none{
+            width: 100%;
+    max-width: 270px;
+    height: 100px;
+    /* background: rgba(196, 196, 196, 0.42); */
+    /* border: 2px solid rgba(255, 255, 255, 0.58); */
+    /* border-radius: 12px; */
+    margin-top: 73px !important;
+        img{
+            width: 100% !important;
+        }
+    }
+    
 }
 
 
@@ -1174,23 +1212,375 @@
 
 
 
-// Second_section
+// Team page
+
+@media(min-width:576px){
+    .mobile_full_team_wrapper{
+        display: none !important;
+    }
+}
+
+@media(min-width:320px) and (max-width:575.98px){
+.full_team_wrapper{
+    display: none !important; 
+}
+.full_team{
+    background:linear-gradient(rgba(000,000,000,0.85), rgba(000,000,000,0.85)), url(../img/Page_Team/bg.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    padding-top: 100px;
+}
+.person_item_black_block{
+    background: rgba(196, 196, 196, 0.18);
+    transition: 0.5s;
+    &:hover{
+        background: linear-gradient(180deg, #5B2B30 0%, #6B3935 57.29%, #A25B48 98.44%), rgba(196, 196, 196, 0.18);
+    }
+}
+.person_item_img{
+    max-height:219px ;
+}
+.full_team_black_block_title_wrapper{
+    justify-content: center;
+}
+.person_item_black_block{
+    padding: 5% 0 !important;
+
+}
+.full_team_black_block_title_wrapper {
+    margin: 0 auto 5px !important;
+
+}
+.person_item{
+    max-width:294px ;
+    text-align: center;
+}
+.cards_wrapper{
+    .seventh_section_item_title{
+        font-size: 26px;
+    }
+    .full_team_logo_wrapper{
+        gap: 0 !important;
+    }
+}
+}
 
 
+@media(min-width:576px) and (max-width:767.98px){
+        .full_team_item_container{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .full_team_item {
+        margin: auto;
+        justify-content: center;
+    }
+    .full_team_img,.full_team_black_block{
+        min-width: 260px !important;
+        max-width: 260px !important;
+    }
+.border-none{
+    border-radius: 0 !important;
+}
+.border-right-top{
+    border-radius: 0px 15px 0px 0px !important;
+}
+.full_team{
+    background-size: cover !important;
+    padding: 5% 0 10%;
+}
+}
 
-@media(min-width:320px) and (max-width:575.98px){}
+
+@media(min-width:768px) and (max-width:991.98px){
+        .full_team_item_container{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .full_team_item {
+        margin: auto;
+    }
+    .full_team_img,.full_team_black_block{
+        min-width: 294px !important;
+        max-width: 294px !important;
+    }
+.border-none{
+    border-radius: 0 !important;
+}
+.border-right-top{
+    border-radius: 0px 15px 0px 0px !important;
+}
+.full_team{
+    background-size: cover !important;
+    padding: 5% 0 10%;
+}
+}
 
 
-@media(min-width:576px) and (max-width:767.98px){}
+@media(min-width:992px) and (max-width:1199.98px){
+    .full_team_item_container{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .full_team_item {
+        margin: auto;
+    }
+    .full_team_img,.full_team_black_block{
+        min-width: 294px !important;
+        max-width: 294px !important;
+    }
+.border-none{
+    border-radius: 0 !important;
+}
+.border-right-top{
+    border-radius: 0px 15px 0px 0px !important;
+}
+.full_team{
+    background-size: cover !important;
+    padding: 5% 0 10%;
+}
 
-
-@media(min-width:768px) and (max-width:991.98px){}
-
-
-@media(min-width:992px) and (max-width:1199.98px){}
+}
 
 
 @media(min-width:1200px) and (max-width:1399.98px){}
+
+
+@media(min-width:1400px){}
+
+
+
+// Private_sale
+
+
+
+@media(min-width:320px) and (max-width:575.98px){
+    .timer_info_img{
+        display: none;
+    }
+    .timer_wrapper{
+        padding: 35px 15px 0 !important;
+        border-right: none !important;
+        border-left: none !important;
+        border-radius: 0 !important;
+    }
+    .timer__items{
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .timer_info_wrapper{
+        z-index: 2;
+        position: static !important;
+        text-align: center;
+    }
+    .timer_info{
+        justify-content: center;
+    }
+    .timer__item{
+        width: 100% !important;
+        max-width: 145px !important;
+        padding: 0px 7px;
+    }
+    .timer{
+        justify-content: center !important;
+    }
+    .big_img_solder{
+        z-index: 0;
+        position: static !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        max-width: 500px;
+        margin: 0;
+    }
+    .dnone{
+        display: none !important;
+    }
+    .m_img{
+        margin-top: 50px;
+    }
+
+        .seventh_section_item_title{
+            font-size: 30px !important;
+        }
+
+}
+
+
+@media(min-width:576px) and (max-width:767.98px){
+    .timer_info_img{
+        display: none;
+    }
+    .timer_wrapper{
+        padding: 35px 15px 0 !important;
+        border-right: none !important;
+        border-left: none !important;
+        border-radius: 0 !important;
+    }
+    .timer_info_wrapper{
+        z-index: 2;
+        position: static !important;
+        text-align: center;
+    }
+    .timer_info{
+        justify-content: center;
+    }
+    .timer__item{
+        width: 100% !important;
+        max-width: 145px !important;
+        padding: 0px 7px;
+    }
+    .timer{
+        justify-content: center !important;
+    }
+    .big_img_solder{
+        z-index: 0;
+        position: static !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        max-width: 500px;
+        margin: 0;
+    }
+    .dnone{
+        display: none !important;
+    }
+    .m_img{
+        margin-top: 50px;
+    }
+
+}
+
+@media(min-width: 768px){
+    .m_img{
+        display: none !important;
+    }
+}
+@media(min-width:768px) and (max-width:991.98px){
+
+}
+
+
+@media(min-width:992px) and (max-width:1199.98px){
+    .big_img_solder{
+        right: 0 !important;
+    }
+}
+
+
+@media(min-width:1200px) and (max-width:1399.98px){
+    .big_img_solder{
+        right: 0 !important;
+    }
+}
+
+
+@media(min-width:1400px){}
+
+
+
+// Private Sale
+
+
+
+@media(min-width:320px) and (max-width:575.98px){
+    .private_sale_body{
+        background: rgba(0,0,0, 0.95) !important;
+    }
+    .services_items{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .map_img{
+        img{
+            width: 100%;
+        }
+    }
+    .services_item{
+        width: 100% !important;
+        min-width: 300px !important;
+    }
+    .services{
+        padding: 0 15px;
+    }
+    .big_img_solder {
+        z-index: 0;
+        position: absolute;
+        right: -15px !important;
+        top: -118px;
+        height: 588px;
+        max-width: 450px !important;
+    }
+}
+
+
+@media(min-width:576px) and (max-width:767.98px){
+    .services_items{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .services_item{
+        width: 100% !important;
+        min-width: 500px !important;
+    }
+    .services{
+        padding: 0 15px;
+    }
+    .big_img_solder {
+        z-index: 0;
+        position: absolute;
+        right: -15px !important;
+        top: -118px;
+        height: 588px;
+        max-width: 450px !important;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:991.98px){
+    .services_items{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .services_item{
+        width: 100% !important;
+        min-width: 500px !important;
+    }
+    .timer_container,.services{
+        padding: 0 15px;
+    }
+    .big_img_solder {
+        z-index: 0;
+        position: absolute;
+        right: -15px !important;
+        top: -118px;
+        height: 588px;
+        max-width: 450px !important;
+    }
+}
+
+
+@media(min-width:992px) and (max-width:1199.98px){
+    .services_items{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .services_item{
+        width: 100% !important;
+        min-width: 500px !important;
+    }
+    .timer_container,.services{
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:1199.98px){
+    .services_items{
+        gap: 80px !important;
+    }
+}
+@media(min-width:1200px) and (max-width:1399.98px){
+
+}
 
 
 @media(min-width:1400px){}
