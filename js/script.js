@@ -1,25 +1,31 @@
+//!    Preloader
 
+window.onload = function () {
+   document.body.classList.add("loaded_hiding");
+   window.setTimeout(function () {
+      document.body.classList.add("loaded");
+      document.body.classList.remove("loaded_hiding");
+   }, 500);
+};
 //! Плавная прогрузка Элементов
 
 function onEntry(entry) {
-    entry.forEach((change) => {
-       if (change.isIntersecting) {
-          change.target.classList.add("element-show");
-       }
-    });
- }
- 
- let options = {
-    threshold: [0.5],
- };
- let observer = new IntersectionObserver(onEntry, options);
- let elements = document.querySelectorAll(".element-animation");
- 
- for (let elm of elements) {
-    observer.observe(elm);
- }
- 
+   entry.forEach((change) => {
+      if (change.isIntersecting) {
+         change.target.classList.add("element-show");
+      }
+   });
+}
 
+let options = {
+   threshold: [0.5],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".element-animation");
+
+for (let elm of elements) {
+   observer.observe(elm);
+}
 
 $(".slider_box_wrapper").slick({
    infinite: true,
@@ -51,26 +57,26 @@ $(".slider_box_wrapper").slick({
 });
 
 $(".slider_gun_wrapper").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
- });
- $(".mobile_slider").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
- });
- $(".desktop_slider_none").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
- });
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   dots: true,
+});
+$(".mobile_slider").slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   dots: true,
+});
+$(".desktop_slider_none").slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   dots: true,
+});
 
 var swiper = new Swiper(".mySwiper", {
    loop: false,
@@ -91,5 +97,3 @@ var swiper2 = new Swiper(".mySwiper2", {
       swiper: swiper,
    },
 });
-
-
