@@ -237,12 +237,11 @@ body {
 
 //! Плавная прогрузка Элементов
 
-@media (min-height: 600px) and (min-width: 1199px) {
+@media (min-height: 600px) and (min-width: 992px) {
    .element-animation {
       opacity: 0;
       transform: scale(0.9);
    }
-
    .element-show {
       opacity: 1;
       transition: 0.5s;
@@ -251,7 +250,7 @@ body {
 
    //* Из левой части плавно появляется
    .animation_fromLeft_to_right.element-animation {
-      transform: translate(-100%, 0);
+      transform: translate(-25%, 0);
    }
    .animation_fromLeft_to_right.element-show {
       transform: translate(0, 0) !important;
@@ -260,7 +259,7 @@ body {
 
    //* Из правой части плавно появляется
    .animation_fromRight_to_left.element-animation {
-      transform: translate(100%, 0);
+      transform: translate(25%, 0);
    }
    .animation_fromRight_to_left.element-show {
       transform: translate(0, 0) !important;

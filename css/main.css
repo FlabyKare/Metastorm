@@ -1767,7 +1767,7 @@ body::-webkit-scrollbar-button {
     transform: rotate(360deg);
   }
 }
-@media (min-height: 600px) and (min-width: 1199px) {
+@media (min-height: 600px) and (min-width: 992px) {
   .element-animation {
     opacity: 0;
     -webkit-transform: scale(0.9);
@@ -1781,8 +1781,8 @@ body::-webkit-scrollbar-button {
             transform: scale(1);
   }
   .animation_fromLeft_to_right.element-animation {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
   }
   .animation_fromLeft_to_right.element-show {
     -webkit-transform: translate(0, 0) !important;
@@ -1791,8 +1791,8 @@ body::-webkit-scrollbar-button {
     transition: 1s !important;
   }
   .animation_fromRight_to_left.element-animation {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
+    -webkit-transform: translate(25%, 0);
+            transform: translate(25%, 0);
   }
   .animation_fromRight_to_left.element-show {
     -webkit-transform: translate(0, 0) !important;
