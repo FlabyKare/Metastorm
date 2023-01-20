@@ -237,7 +237,7 @@ body {
 
 //! Плавная прогрузка Элементов
 
-@media (min-height: 800px) and (min-width: 992px) {
+@media (min-height: 600px) and (min-width: 1199px) {
    .element-animation {
       opacity: 0;
       transform: scale(0.9);
