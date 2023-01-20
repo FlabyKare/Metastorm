@@ -250,7 +250,7 @@ body {
 
    //* Из левой части плавно появляется
    .animation_fromLeft_to_right.element-animation {
-      transform: translate(-25%, 0);
+      transform: translate(-50%, 0);
    }
    .animation_fromLeft_to_right.element-show {
       transform: translate(0, 0) !important;
@@ -259,7 +259,7 @@ body {
 
    //* Из правой части плавно появляется
    .animation_fromRight_to_left.element-animation {
-      transform: translate(25%, 0);
+      transform: translate(50%, 0);
    }
    .animation_fromRight_to_left.element-show {
       transform: translate(0, 0) !important;
@@ -276,6 +276,10 @@ body {
    }
 }
 
+.body_container{
+    width: 100%;
+    overflow-x: hidden !important;
+}
 .sixth_section,
 .seventh_section,
 .team,
