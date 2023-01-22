@@ -1767,7 +1767,7 @@ body::-webkit-scrollbar-button {
     transform: rotate(360deg);
   }
 }
-@media (min-height: 600px) and (min-width: 992px) {
+@media (min-height: 400px) {
   .element-animation {
     opacity: 0;
     -webkit-transform: scale(0.9);

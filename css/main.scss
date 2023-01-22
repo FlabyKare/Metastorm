@@ -237,7 +237,7 @@ body {
 
 //! Плавная прогрузка Элементов
 
-@media (min-height: 600px) and (min-width: 992px) {
+@media (min-height: 400px) {
    .element-animation {
       opacity: 0;
       transform: scale(0.9);
@@ -249,6 +249,7 @@ body {
    }
 
    //* Из левой части плавно появляется
+   //? animation_fromLeft_to_right element-animation
    .animation_fromLeft_to_right.element-animation {
       transform: translate(-50%, 0);
    }
@@ -258,6 +259,7 @@ body {
    }
 
    //* Из правой части плавно появляется
+   //? animation_fromRight_to_left element-animation
    .animation_fromRight_to_left.element-animation {
       transform: translate(50%, 0);
    }
@@ -266,7 +268,9 @@ body {
       transition: 1s !important;
    }
 
+
    //* Из нижней части плавно появляется
+   //? animation_fromBottom_to_up element-animation
    .animation_fromBottom_to_up.element-animation {
       transform: translate(0, 100%);
    }
