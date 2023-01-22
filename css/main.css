@@ -1811,6 +1811,18 @@ body::-webkit-scrollbar-button {
     transition: 1s !important;
   }
 }
+@media (min-height: 400px) and (max-width: 767.98px) {
+  .animation_fromBottom_to_up.element-animation {
+    -webkit-transform: translate(0, 15%);
+            transform: translate(0, 15%);
+  }
+  .animation_fromBottom_to_up.element-show {
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
+    -webkit-transition: 1s !important;
+    transition: 1s !important;
+  }
+}
 .body_container {
   width: 100%;
   overflow-x: hidden !important;

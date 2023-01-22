@@ -268,7 +268,6 @@ body {
       transition: 1s !important;
    }
 
-
    //* Из нижней части плавно появляется
    //? animation_fromBottom_to_up element-animation
    .animation_fromBottom_to_up.element-animation {
@@ -278,11 +277,22 @@ body {
       transform: translate(0, 0) !important;
       transition: 1s !important;
    }
+   @media (max-width: 767.98px) {
+      //* Из нижней части плавно появляется
+      //? animation_fromBottom_to_up element-animation
+      .animation_fromBottom_to_up.element-animation {
+         transform: translate(0, 15%);
+      }
+      .animation_fromBottom_to_up.element-show {
+         transform: translate(0, 0) !important;
+         transition: 1s !important;
+      }
+   }
 }
 
-.body_container{
-    width: 100%;
-    overflow-x: hidden !important;
+.body_container {
+   width: 100%;
+   overflow-x: hidden !important;
 }
 .sixth_section,
 .seventh_section,
