@@ -1670,19 +1670,22 @@ body {
   padding-bottom: 55px;
 }
 body::-webkit-scrollbar {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: black;
 }
 body::-webkit-scrollbar-track {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
 }
 body::-webkit-scrollbar-thumb {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: rgb(140, 137, 137);
   border-radius: 20px;
 }
 body::-webkit-scrollbar-button {
   display: none;
+}
+body:not(.loaded) {
+  overflow: hidden;
 }
 
 .loaded_hiding {
